@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsha Kukreja-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(1, 1, 36);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(19, 19, 86);
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: flex;
+            padding: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(161, 161, 226);
+            font-size: 1.05rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: white;
+            height: 1.4px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.8rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            margin-bottom: 55px;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+
+            font-size: 2.8rem;
+
+        }
+
+        .rightSection img {
+            width: 90%;
+            margin: 30px 0;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        .text-grey {
+            color: grey
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 130vh
+        }
+
+        .secondSection h1 {
+            font-size: 2rem;
+        }
+
+        .secondSection .box {
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 57px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 85px;
+            width: 1px;
+            background-color: white;
+            margin: 0 300px;
+        }
+
+        .image-top {
+            width: 30px;
+            position: relative;
+            top: -40px;
+            left: -11px
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 60px;
+            width: 350px;
+        }
+
+        .vertical-description {
+            position: relative;
+            top: 85px;
+            width: 200px
+        }
+
+        .vertical-2 {
+            height: 85px;
+            width: 1px;
+            background-color: white;
+            margin: 0 260px;
+        }
+
+        .image-2 {
+            width: 87px;
+            position: relative;
+            top: -38px;
+            left: -31px;
+        }
+
+        .vertical-title2 {
+            position: relative;
+            top: 60px;
+            width: 350px;
+        }
+
+        .vertical-description2 {
+            position: relative;
+            top: 85px;
+            width: 240px;
+        }
+
+        .thirdSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 65vh
+        }
+
+        .thirdSection h1 {
+            font-size: 2rem;
+            margin-bottom: 35px;
+        }
+
+        .thirdSection .skills-list {
+            display: grid;
+
+
+        }
+
+        .fourthSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 70vh
+        }
+
+        .fourthSection h1 {
+            font-size: 2rem;
+            margin-bottom: 35px;
+        }
+
+        .fifthSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 230vh
+        }
+
+        .fifthSection h1 {
+            font-size: 2rem;
+            margin-bottom: 35px;
+        }
+
+        .sixthSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 50vh
+        }
+
+        .sixthSection h1 {
+            font-size: 2rem;
+            margin-bottom: 35px;
+        }
+
+        .sixthSection .box6 {
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 57px 0;
+            display: flex;
+        }
+
+        .sixthSection .vertical {
+            height: 85px;
+            width: 1px;
+            background-color: white;
+            margin: 0 150px;
+        }
+
+        .edu-title {
+            position: relative;
+            top: 85px;
+            width: 250px;
+            margin-left: -66px;
+        }
+
+        .edu-subtitle {
+            position: relative;
+            top: 80px;
+            width: 250px;
+            margin-left: -23px
+        }
+
+        .edu-description {
+            position: relative;
+            top: 77px;
+            width: 250px;
+            margin-left: -77px
+        }
+
+        .seventhSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 40vh
+        }
+
+        .seventhSection h1 {
+            font-size: 2rem;
+            margin-bottom: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="home">
+        <nav>
+            <div class="left">Harsha's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#experience">Work Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#info">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is<span class="purple"> Harsha</span>
+                <div>I am a budding web developer</div>
+                <span id="element"></span><br><br>
+                <a href="Harsha Kukreja(web dev) (1).pdf" download class="btn"
+                    style="border-radius: 15px;height: 40px; width:160px; background-color: #8a2be8;color: white;">
+                    Download CV</a>
+            </div>
+            <div class="rightSection">
+                <image src="bg5.png" alt=""></image>
+            </div>
+        </section>
+        <hr>
+        <div id="experience">
+            <section class="secondSection">
+                <h1>Work Experience</h1>
+                <span class="text-gray">What I have done so far</span>
+                <div class="box">
+                    <div class="vertical">
+                        <img class="image-top" src="intern.png" alt="">
+                        <h2 class="vertical-title" style="margin-left:-100px">
+                            Intern at SB Accociates
+                        </h2>
+                        <div class="vertical-description" style="margin-left:-70px">Key Responsibilities:<br>
+                            -Accounting for Small and Medium Size Entities. using tally erp<br>
+                            -Performing audit for Sales, Purchases etc.<br>
+                            -Performed complete audit for School with team.<br>
+                        </div>
+                    </div>
+                    <div class="vertical-2">
+                        <img class="image-2" src="accenture2.png" alt="">
+                        <h2 class="vertical-title2" style="margin-left:-100px">
+                            Accountant at Accenture
+                        </h2>
+                        <div class="vertical-description2" style="margin-left:-70px">Worked as real estate accountant
+                            performed various activities
+                            like:<br>
+                            - Accounting for the payment made to landlord for the store premises.<br>
+                            - Preparing & uploading the journal entries for the respective payment types in Oracle.<br>
+                            - Performing Intercompany journal Entry for the client.<br>
+                            - Reconciliation of the accrual balances on month on month basis.<br>
+                            - Responsible for monthly and quarterly close activities.<br>
+                            - Processed invoices using Oracle and JDA and pushed them for payment.<br>
+                            - Prepared fright packages in case the shipment was not received to stores.<br>
+                            - After performing various inspections creating vendor as per request in using Oracle.<br>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+        </div>
+        <hr>
+        <div id="skills">
+            <section class="thirdSection">
+                <div class="three">
+                    <h1>Skills</h1>
+                    <div class="skills-list"
+                        style="display: grid;grid-template-columns: auto auto auto auto auto; gap:5px; align-items: center;margin-left: 95px;">
+                        <!-- html -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="html.png" alt="html" style="width:98px;height:98px;margin-top: 4px;">
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- css -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="css.png" alt="css" style="width:98px;height:98px;margin-top: 4px;">
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- js -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="js.png" alt="javascript" style="width:98px;height:98px;margin-top: 4px;">
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- bootstrap -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="bootstrap.png" alt="bootstrap"
+                                        style="width:98px;height:98px;margin-top: 4px;">
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- react -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="react.png" alt="react" style="width:98px;height:98px;margin-top: 4px;">
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- axios -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="axios.png" alt="axios" style="width:98px;height:98px;margin-top: 4px;">
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- redux -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="redux.png" alt="redux" style="width:98px;height:98px;margin-top: 4px;">
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- node -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="nodejs.png" alt="node" style="width:98px;height:98px;margin-top: 4px;">
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- express -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="express-js.png" alt="Express"
+                                        style="width:98px;height:98px;margin-top: 4px;">
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- mongo -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="mongo.png" alt="mongo" style="width:98px;height:98px;margin-top: 4px;">
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- sql -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="sql.png" alt="Sql" style="width:98px;height:98px;margin-top: 4px;">
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- jwt -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="jwt.png" alt="Jwt" style="width:98px;height:98px;margin-top: 4px;">
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- bcrypt -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="bcrypt.png" alt="Bcrypt" style="width:130px;margin-top: 4px;">
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- postman-->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="postman.png" alt="postman"
+                                        style="width:98px;height:98px;margin-top: 4px;">
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- git -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="git.png" alt="git" style="width:98px;height:98px;margin-top: 4px;">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+        </div>
+        <hr>
+        <div id="services">
+            <section class="fourthSection">
+                <div class="four">
+                    <h1>Services</h1>
+                    <div class="service-list"
+                        style="display: grid;grid-template-columns: auto auto auto ; gap:30px; align-items: center;margin-left: 95px;">
+                        <!-- frontend -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="frontend.png" class="Frontend-Services" alt="...">
+                            <div class="card-body" style="height:130px">
+                                <p class="card-text" style="font-size: 17.5px;">I help to craft intrutive and responsive
+                                    user
+                                    friendly
+                                    UI websites which are compitable with all devices</p>
+                            </div>
+                        </div>
+                        <!-- backend -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="backend.png" class="Backend-Services" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">I am able to build robust and secure backends and RestAPI's for
+                                    seamless
+                                    dataflow
+                                    and
+                                    efficient functionality</p>
+                            </div>
+                        </div>
+                        <!-- fullstack -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="fullstack.png" class="Full Stack Services" alt="...">
+                            <div class="card-body">
+                                <p class="card-text" style="font-size: 15px;"> Using MERN Stack we transform your ideas
+                                    into
+                                    dynamic web applications
+                                    with
+                                    a focus on user-centric design and powerful functionality</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <hr>
+
+        <div id="projects">
+            <section class="fifthSection">
+                <div class="five">
+                    <h1>Projects</h1>
+                    <div class="project-list"
+                        style="display: grid;grid-template-columns: auto auto auto auto ; gap:25px; align-items: center;margin-left: 65px;">
+                        <!-- ecomm -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="ecomm.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">E-Commerce Site</h5>
+                                <p class="card-text">This is E-commerce site made using MERN Stack it has seperate
+                                    customer and admin access</p>
+                                <p>Comming up Soon</p>
+                                <!-- <a href="#" class="btn btn-primary" style="width:45%" disabled>site</a>
+                                <a href="#" class="btn btn-primary" style="width:45%" disabled>Git</a> -->
+                            </div>
+                        </div>
+                        <!-- chat  -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="chat.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Chat-App</h5>
+                                <p class="card-text">A realtime chat app built using the MERN stack is a modern and
+                                    robust communication platform</p>
+                                <p>Comming Up Soon</p>
+                                <!-- <a href="#" class="btn btn-primary" style="width:45%" disabled>site</a>
+                                <a href="#" class="btn btn-primary" style="width:45%" disabled>Git</a> -->
+                            </div>
+                        </div>
+                        <!-- texteditor -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="text.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Text-Editor</h5>
+                                <p class="card-text">Text it up is a word counter and text-based utility tool which can
+                                    be used to manipulate the text you want.</p>
+                                <a href="https://www.linkedin.com/posts/harsha-kukreja0899_html-css-javascript-activity-7111815397397454848-EstL?utm_source=share&utm_medium=member_desktop"
+                                    class="btn btn-primary" style="width:45%">Preview</a>
+                                <a href="https://github.com/Harshakukreja58/Text_it_up" class="btn btn-primary"
+                                    style="width:45%">Git</a>
+                            </div>
+                        </div>
+                        <!-- text-todo -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="todo.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Todo App</h5>
+                                <p class="card-text">A simple Todo App made using MERN Stack, which helps to streamline
+                                    productivity and helps to organize task.</p>
+                                <a href="https://www.linkedin.com/posts/harsha-kukreja0899_todo-mernstack-almabetter-activity-7120727281840402432--I4X?utm_source=share&utm_medium=member_desktop"
+                                    class="btn btn-primary" style="width:45%">Preview</a>
+                                <a href="https://github.com/Harshakukreja58/To-Do-app" class="btn btn-primary"
+                                    style="width:45%">Git</a>
+                            </div>
+                        </div>
+                        <!-- expense management -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="budget.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Expense Management App</h5>
+                                <p class="card-text">Expense Manager app made using MERN stack which helps to simplify
+                                    expenses and manage them better with proper analytics</p>
+                                <a href="https://www.linkedin.com/posts/harsha-kukreja0899_mern-expensemanagement-analytics-activity-7128417636056510464-aoPX?utm_source=share&utm_medium=member_desktop"
+                                    class="btn btn-primary" style="width:45%">Preview</a>
+                                <a href="https://github.com/Harshakukreja58/expense-management-app-mern"
+                                    class="btn btn-primary" style="width:45%">Git</a>
+                            </div>
+                        </div>
+                        <!-- email validator -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="email.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Email Validator</h5>
+                                <p class="card-text">This is email verification tool made using HTML CSS and JavaScript
+                                    which helps you to know whether the
+                                    email is valid or not</p>
+                                <a href="https://www.linkedin.com/posts/harsha-kukreja0899_html-css-javascript-activity-7114894918736580608-tXlK?utm_source=share&utm_medium=member_desktop"
+                                    class="btn btn-primary" style="width:45%">Preview</a>
+                                <a href="https://github.com/Harshakukreja58/Email-Validator" class="btn btn-primary"
+                                    style="width:45%">Git</a>
+                            </div>
+                        </div>
+                        <!-- ytsubs -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="youtube.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Get Youtube Subscribers</h5>
+                                <p class="card-text">This is simple backend program made using NodeJS to access
+                                    subscribers data from database </p>
+                                <a href="https://victorious-ruby-chameleon.cyclic.app/" class="btn btn-primary"
+                                    style="width:45%">site</a>
+                                <a href="https://github.com/Harshakukreja58/Youtube-Subscribers" class="btn btn-primary"
+                                    style="width:45%">Git</a>
+                            </div>
+                        </div>
+                        <!-- flashcard
+                        <div class="card" style="width: 18rem;">
+                            <img src="flashcard.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Flashcard Generator</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                                <a href="#" class="btn btn-primary" style="width:45%">site</a>
+                                <a href="#" class="btn btn-primary" style="width:45%">Git</a>
+                            </div>
+                        </div> -->
+                        <!-- calculator -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="calculator.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">calculator</h5>
+                                <p class="card-text">Web based calculator made using HTML, CSS and JavaScript to perform
+                                    simple operations.</p>
+                                <a href="https://www.linkedin.com/posts/harsha-kukreja0899_html-css-javascript-activity-7104200275673923584-08AH?utm_source=share&utm_medium=member_desktop"
+                                    class="btn btn-primary" style="width:45%">Preview</a>
+                                <a href="https://github.com/Harshakukreja58/Basic_Calculator" class="btn btn-primary"
+                                    style="width:45%">Git</a>
+                            </div>
+                        </div>
+                        <!-- signup form -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="signup.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Registration form</h5>
+                                <p class="card-text">Basic Signup form powered by HTML and CSS, with data all saved and
+                                    secured in SQL</p>
+                                <a href="https://www.linkedin.com/posts/harsha-kukreja0899_html-css-sql-activity-7110548426789912576-t7nc?utm_source=share&utm_medium=member_desktop"
+                                    class="btn btn-primary" style="width:45%">Preview</a>
+                                <a href="https://github.com/Harshakukreja58/Signup_Form" class="btn btn-primary"
+                                    style="width:45%">Git</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <hr>
+        <div id="education">
+            <Section class="sixthSection">
+                <h1>Education</h1>
+                <div class="box6">
+                    <div class="vertical">
+                        <h2 class="edu-title">SSC-2015</h2>
+                        <h6 class="edu-subtitle">76.5%</h6>
+                        <div class="edu-description">Holy Family Convent high School, Ulhasnagar</div>
+                    </div>
+                    <div class="vertical">
+                        <h2 class="edu-title">HSC-2017</h2>
+                        <h6 class="edu-subtitle">80%</h6>
+                        <div class="edu-description">C.H.M college,Ulhasnagar</div>
+                    </div>
+                    <div class="vertical">
+                        <h2 class="edu-title">B.com-2020</h2>
+                        <h6 class="edu-subtitle">(8.4 CGPA)</h6>
+                        <div class="edu-description">University of Mumbai</div>
+                    </div>
+                    <div class="vertical">
+                        <h2 class="edu-title">M.com-2023</h2>
+                        <h6 class="edu-subtitle">Awating result</h6>
+                        <div class="edu-description" style="margin-left:15px">IDOL</div>
+                    </div>
+                </div>
+            </Section>
+        </div>
+        <hr>
+        <div id="info">
+            <section class="seventhSection">
+                <h1>Personal Details</h1>
+                <Div class="h5"> Name: Harsha Kukreja</Div><br>
+                <Div Class="h5">Email id: harshakukreja0899@gmail.com</Div><br>
+                <a href="https://www.linkedin.com/in/harsha-kukreja0899" target="_blank"><img src="linkedin.png"
+                        alt="visit Linkedin"
+                        style="height: 50px;width: 50px; margin-right:25px;border-radius: 5px;"></a>
+                <a href="https://github.com/Harshakukreja58" target="_blank"><img src="git.png" alt="visit GitHub"
+                        style="height: 50px;width: 50px;border-radius: 5px"></a>
+                <br>
+
+
+            </section>
+        </div>
+        <hr>
+        <footer>
+            <div class="made" style="margin-left: 650px;">Made with <img src="heart.jpg" style="height: 15px;"
+                    alt="love"> by Harsha Kukreja </div><br>
+            <div class="back2top" style="margin-left: 710px;"><a href="#" style="color:white; ">Back To
+                    top</a></div>
+
+        </footer>
+        <hr>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Desginer', 'Full Stack developer', 'javaScript developer', 'React developer', 'Accountant', 'Artist'],
+            typeSpeed: 50,
+        });
+
+
+    </script>
+</body>
+
+</html>
